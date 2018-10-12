@@ -14,12 +14,12 @@ test1:
   stage: test
   script: 
     - echo "Do a test here"
-    – bash ~/update.bash
+    - bash ~/update.bash
     - echo "Update example run finished"
    
 test2:
   stage: test
   script: 
     - echo "Do another parallel test here"
-    – bash ~/install.bash
+    - bash ~/install.bash
     - echo "For example run a lint test"
