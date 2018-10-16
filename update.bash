@@ -1,3 +1,5 @@
+#!/bin/bash
+
 [ -d logs ] || mkdir logs #if /logs directory not existent, make it
 dt=$(date)
 cd logs

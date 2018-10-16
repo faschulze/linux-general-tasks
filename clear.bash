@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "Clearing cache..."
 rm -rf ~/.cache/
 mkdir ~/.cache/
