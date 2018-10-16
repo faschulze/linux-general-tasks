@@ -17,6 +17,7 @@ test1:
     - pwd
     - cd /builds/yunocare/Linux-General-Tasks/
     - pwd
+    - chmod +x update.bash
     - bash update.bash
     - echo "Update example run finished"
    
