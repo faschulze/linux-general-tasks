@@ -17,13 +17,12 @@ test1:
     - pwd
     - cd /builds/yunocare/Linux-General-Tasks/
     - pwd
-    - chmod +x update.bash
-    - bash update.bash
+    - chmod +x clear.bash
+    - bash clear.bash
     - echo "Update example run finished"
    
 test2:
   stage: test
   script: 
     - echo "Do another parallel test here"
-    - bash /builds/yunocare/Linux-General-Tasks/install.bash
-    - echo "For example run a lint test"
+    - echo "Empty Test finished"
