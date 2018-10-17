@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Comment
+
+myName="fs"
+
+echo "Hello $myName, let's do some maths:"
+
+declare -r NUM1=5 #declare NUM1 as a constant
+
+num2=4
+
+echo "Add: " $NUM1 + $num2 = $((NUM1+num2))
+echo "Subtract: " $NUM1 - $num2 = $((NUM1-num2))
+echo "Multiply: $NUM1 * $num2 " = $((NUM1*num2))
+echo "Divide: " $NUM1 / $num2 = $((NUM1/num2))
+echo "Modulo: " $NUM1 % $num2 = $((NUM1%num2))
+echo "Power: " $NUM1 ^ $num2 = $((NUM1**num2))
+
+
+declare -r NUM_INCR=9
+echo "Now $myName, let's increment the value $NUM_INCR"
+num3=9 #how to init num3 with the value of NUM_INCR?
+echo "Starting with $num3"
+increment=4
+let num3+=increment
+echo "Incrementing $NUM_INCR  by $increment, results in: $num3"  
+
+#Increment options:
+echo "num3++ = $((num3++))"
+echo "++num3 = $((++num3))"
+echo "num3-- = $((num3--))"
+echo "--num3 = $((--num3))"
+
+#doing calculation with float values using python
+num4=1.2
+num5=3.4
+num6=$(python -c "print $num4+$num5")
+echo $num6
+
+
+cat<< END
+This program finished successfully.
+Cheers!
+END
