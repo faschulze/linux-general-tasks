@@ -1,10 +1,20 @@
 # Linux General Tasks
 
-## Test Frame for install.bash
+## backup/
 
-What should be tested to make sure the installation of basic programs is compatible to Ubuntu 18.04 version
+* **Data Backup:** backup.bash (include directories in variable *backup_files*; output folder variable *dest*)
+* **Program Backup:** backup_Programs.bash
 
-* compiling latex code and building pdf files using *pdflatex*
-* compiling and running JAVA code in eclipse and IntelliJIdea
-* compiling and running C++ code using the *g++ compiler*
-* ...
+
+## install/
+
+* useful programs
+
+## monitoring/
+
+* **Systeminfo:** system_info.sh
+* **Interactive Process Viewer:** *htop*
+ 
+## vim/
+
+* general information on VIM usage
