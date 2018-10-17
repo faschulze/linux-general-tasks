@@ -25,3 +25,16 @@ echo "Successfully removed"
 echo "Removing .thumbnails directory..."
 rm -rf ~/.thumbnails/
 echo "Successfully finshed."
+
+# vanish keepass db entries
+echo "Vanishing KeePass DB history..."
+rm ~/.recently-used
+echo "Successfully finished."
+
+# remove Skype Known Hosts
+echo "Removing Skype Known Hosts."
+rm ~/.wget-hsts 
+echo "Successfully finished."
+
+
+
