@@ -1,5 +1,1 @@
-logs/
-tmp/
-*.log
-*.swp
-versions.txt
+update/logs/

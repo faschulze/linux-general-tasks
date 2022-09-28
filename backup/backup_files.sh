@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -e
 
 # backup to NFS mount script.
 ####################################

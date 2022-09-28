@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -e
 
 dpkg --get-selections > ~/Package.list
 sudo cp -R /etc/apt/sources.list* ~/

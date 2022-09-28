@@ -1,0 +1,16 @@
+* Aufsplitten von system_info.sh in 
+- show_system_usage.sh
+- show_system_free_memory.sh
+- show_system_free_usage.sh
+
+Free Disk Space: Zeige erst an wie groß die Ordner sind und frage dann nach Löschen?
+
+
+# SYSTEM INFORMATION:
+
+cat /proc/cpuinfo | grep proc #CPU information on processors
+cat /proc/meminfo | grep Mem  #Memory information
+uname -a 		      #about current distribution
+
+
+

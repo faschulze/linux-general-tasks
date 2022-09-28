@@ -1,19 +1,9 @@
-#!/bin/bash
-
-echo "Clearing cache..."
-rm -rf ~/.cache/
-mkdir ~/.cache/
-echo "Successfully finished."
+#!/bin/sh -e
 
 # clear terminal history
 echo "Clearing terminal history..."
 rm ~/.bash_history
 touch ~/.bash_history
-echo "Successfully finished."
-
-# empty recycle bin
-echo "Emptying recycle bin..."
-rm -rf ~/.local/share/Trash/*
 echo "Successfully finished."
 
 # remove VIM history
@@ -36,5 +26,9 @@ echo "Removing Skype Known Hosts."
 rm ~/.wget-hsts 
 echo "Successfully finished."
 
+# clean journal logs 
+echo "clean journal logs."
+sudo journalctl --vacuum-time=3d
+echo "Successfully finished."
 
-
+exit 0
